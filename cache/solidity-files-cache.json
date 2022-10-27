@@ -1,0 +1,260 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/ajay/hardhat-defi/contracts/interfaces/IWeth.sol": {
+      "lastModificationDate": 1666429637326,
+      "contentHash": "f31d1b78aed345d7a44d4983f797b210",
+      "sourceName": "contracts/interfaces/IWeth.sol",
+      "solcConfig": {
+        "version": "0.4.19",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.19"
+      ],
+      "artifacts": [
+        "IWeth"
+      ]
+    },
+    "/home/ajay/hardhat-defi/contracts/ILendingPool.sol": {
+      "lastModificationDate": 1666692106611,
+      "contentHash": "6fbb3b99b1c5d8780790cf408759cd50",
+      "sourceName": "contracts/ILendingPool.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@aave/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+        "@aave/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ILendingPool"
+      ]
+    },
+    "/home/ajay/hardhat-defi/node_modules/@aave/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol": {
+      "lastModificationDate": 1666691972251,
+      "contentHash": "a487bfd067ce6e71ddc7e9cc91302bae",
+      "sourceName": "@aave/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ILendingPoolAddressesProvider"
+      ]
+    },
+    "/home/ajay/hardhat-defi/node_modules/@aave/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol": {
+      "lastModificationDate": 1666691972311,
+      "contentHash": "2127b8d36674faba96bc703f72164a1a",
+      "sourceName": "@aave/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DataTypes"
+      ]
+    },
+    "/home/ajay/hardhat-defi/contracts/IERC20.sol": {
+      "lastModificationDate": 1666693361451,
+      "contentHash": "d1e13a60050d534e9c9d71702c00a69e",
+      "sourceName": "contracts/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.6"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/ajay/hardhat-defi/contracts/AggregatorV3Interface.sol": {
+      "lastModificationDate": 1666776919866,
+      "contentHash": "e4808aad99bd7989e3d79e83f187258c",
+      "sourceName": "contracts/AggregatorV3Interface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.6.0"
+      ],
+      "artifacts": [
+        "AggregatorV3Interface"
+      ]
+    }
+  }
+}
