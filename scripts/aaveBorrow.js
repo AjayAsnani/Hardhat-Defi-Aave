@@ -20,11 +20,11 @@ async function main() {
     let { availableBorrowsETH, totalDebtETH } = await getBorrowUserData(lendingPool, deployer)
     const daiPRice = await getDaiPrice()
     const amountDaiToBorrow =
-        (await availableBorrowsETH.tostring()) * 0.95 * (1 / daiPRice.toNumber())
+        (await availableBorrowsETH.toString()) * 0.95 * (1 / daiPRice.toNumber())
     console.log(`you can borrow ${amountDaiToBorrow} DAI`)
     const amountDaiToBorrowWei = ethers.utils.parseEther(amountDaiToBorrow.toString())
     const daiTokenAddress = "0x6b175474e89094c44da98b954eedeac495271d0f"
-    await borrowDai(daiTokenAddressm, lendingPool, amountDaiToBorrowWei, deployer)
+    await borrowDai(daiTokenAddress, lendingPool, amountDaiToBorrowWei, deployer)
     await getBorrowUserData(lendingPool, deployer)
     await repay(amountDaiToBorrowWei, daiTokenAddress, lendingPool, deployer)
     await getBorrowUserData(lendingPool, deployer)
@@ -38,7 +38,7 @@ async function repay(amount, daiAddress, lendingPool, account) {
 }
 
 async function borrowDai(daiAddress, lendingPool, amountDaiToBorrowWei, account) {
-    const borrowTx = await lendingPool.borrow(daiAddress, amountDaiToBorrow, 1, 0, account)
+    const borrowTx = await lendingPool.borrow(daiAddress, amountDaiToBorrowWei, 1, 0, account)
     await borrowTx.wait(1)
     console.log("You have borrowed!")
 }
@@ -50,13 +50,13 @@ async function getDaiPrice() {
         //0x773616E4d11A78F511299002da57A0a94577F1f4=DAI to Eth price contract
     )
     const price = (await daiEthPriceFeed.latestRoundData())[1]
-    console.log(`The DAI/ETH price is ${price.tostring()}`)
+    console.log(`The DAI/ETH price is ${price.toString()}`)
     return price
 }
 
 async function getBorrowUserData(lendingPool, account) {
     const { totalCollateralETH, totalDebtETH, availableBorrowsETH } =
-        await lendingPool.getUserAcountData(account)
+        await lendingPool.getUserAccountData(account)
     console.log(`You have ${totalCollateralETH} worth of ETH deposited`)
     console.log(`You have ${totalDebtETH} worth of ETH borrowed`)
     console.log(`You can borrow ${availableBorrowsETH} worth of ETH`)

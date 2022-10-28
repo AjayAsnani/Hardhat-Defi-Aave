@@ -21,7 +21,7 @@ module.exports = {
         ],
     },
     defaultNetwork: "hardhat",
-    network: {
+    networks: {
         hardhat: {
             chainId: 31337,
             forking: {
@@ -41,16 +41,16 @@ module.exports = {
             coinmarketcap: COINMARKET_API,
             token: "MATIC",
         },
-        etherscan: {
-            apikey: ETHERSCAN_API_KEY,
+    },
+    etherscan: {
+        apikey: ETHERSCAN_API_KEY,
+    },
+    namedAccounts: {
+        deployer: {
+            default: 0,
         },
-        namedAccounts: {
-            deployer: {
-                default: 0,
-            },
-            user: {
-                default: 1,
-            },
+        user: {
+            default: 1,
         },
     },
 }
